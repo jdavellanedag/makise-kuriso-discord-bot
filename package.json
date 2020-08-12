@@ -1,0 +1,39 @@
+{
+  "name": "makise-kuriso-bot",
+  "version": "1.0.0",
+  "description": "A simple discord bot",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "npm run build && node build/main.js",
+    "dev": "nodemon -e ts --exec \"npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdavellanedag/makise-kuriso-discord-bot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "Julian Avellaneda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdavellanedag/makise-kuriso-discord-bot/issues"
+  },
+  "homepage": "https://github.com/jdavellanedag/makise-kuriso-discord-bot#readme",
+  "dependencies": {
+    "@typeit/discord": "^4.0.8",
+    "discord.js": "^12.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^14.0.27",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.6.0",
+    "tslib": "^2.0.1",
+    "typescript": "^3.9.7"
+  }
+}
